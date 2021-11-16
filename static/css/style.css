@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-family: 'Raleway';
+    color: orange !important;
+}
+
+.navbar-brand:hover, .nav-item pre:hover {
+    color: lightseagreen !important;
+}
+
+.nav-item pre {
+    font-size: 26px;
+    font-family: 'Raleway';
+    color: whitesmoke;
+}
+
+.jumbotron {
+    font-family: "Patrick Hand";
+}
