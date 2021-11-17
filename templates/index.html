@@ -14,8 +14,72 @@
       </div>
     </div>
 
-    <div id="percentile"></div>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col d-flex justify-content-center">
+          <i class="fas fa-user-clock"></i>&nbsp;Age (years):&nbsp;&nbsp;
+          <input type="number" id="age" name="age" required min="14" max="120">
+        </div>
+      </div>
 
+      <div class="row mt-5">
+        <div class="col d-flex justify-content-center">
+          <i class="fas fa-weight"></i>&nbsp;Weight (pounds):&nbsp;&nbsp;
+          <input type="number" id="weight" name="weight" required step="0.1" min="50" max="999">
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col d-flex justify-content-center">
+          <i class="fas fa-ruler-vertical"></i>&nbsp;Height (feet, inches):&nbsp;&nbsp;
+          <select name="height" id="feet" required>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+          <select name="inch" id="inch">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col d-flex justify-content-center">
+          <form>
+            <p>Smoker (Select an Option):</p>
+            <label>
+              <input type="radio" name="smoke" value="yes" checked>
+              <i class="fas fa-smoking"></i>
+            </label>
+            <label>
+              <input type="radio" name="smoke" value="no" checked>
+              <i class="fas fa-smoking-ban"></i>
+            </label>
+            <br>
+          </form>
+        </div>
+      </div>
+
+
+      <div id="percentile"></div>
+    </div>
+
+    <script type="text/javascript" src="../static/js/bmi.js"></script>
+    <script type="text/javascript" src="../static/js/plot.js"></script>
 <!-- Begin Standard Content -->
 {% endblock %}
 <!-- End Standard Content -->

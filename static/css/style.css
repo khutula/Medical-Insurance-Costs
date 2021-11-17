@@ -1,23 +1,49 @@
 body {
-    background-color: black;
+    background-color: #dcd4d2;
+    font-size: 25px;
+    font-family: "Raleway";
 }
 
 .navbar-brand {
-    font-size: 40px;
-    font-family: 'Raleway';
-    color: orange !important;
+    font-size: 50px;
+    color: #ff623f !important;
+    padding: 15px;
 }
 
 .navbar-brand:hover, .nav-item pre:hover {
-    color: lightseagreen !important;
-}
-
-.nav-item pre {
-    font-size: 26px;
-    font-family: 'Raleway';
-    color: whitesmoke;
+    color: #d2c520 !important;
 }
 
 .jumbotron {
-    font-family: "Patrick Hand";
+    background-color: rgba(52, 102, 59, 1);
+    margin: 50px;
+    padding: 20px;
+    
+}
+
+.nav-item pre {
+    font-size: 35px;
+    color: #dcd4d2;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* IMAGE STYLES */
+[type=radio] + i {
+    cursor: pointer;
+    font-size: 100px;
+    padding: 10px;
+}
+  
+/* CHECKED STYLES */
+[type=radio]:checked + i {
+    outline: 2px solid #f00;
 }
