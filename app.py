@@ -7,21 +7,9 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/page1")
+@app.route("/eda")
 def fortune():
-    return render_template("page1.html")
-
-@app.route("/page2")
-def map():
-    return render_template("page2.html")
-
-@app.route("/page3")
-def find():
-    return render_template("page3.html")
-
-@app.route("/page4")
-def ratings():
-    return render_template("page4.html")
+    return render_template("eda.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
