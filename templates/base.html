@@ -21,11 +21,14 @@
   </head>
   <body>
 
+    <!-- D3 js reference -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
     <!-- NavBar Block -->
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="/">Title/Home</a>
       <div class="nav">
-        <a class="nav-item nav-link" href="#"><pre><i class="fas fa-file-medical-alt"></i> EDA</pre></a>
+        <a class="nav-item nav-link" href="eda"><pre><i class="fas fa-file-medical-alt"></i> EDA</pre></a>
       </div>
     </nav>
     
@@ -34,8 +37,7 @@
     {% block content %} {% endblock %}
     <!-- End Unique Content -->
 
-    <!-- D3 js reference -->
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    
 
     <!-- Plotly js reference -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
