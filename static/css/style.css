@@ -18,8 +18,29 @@ body {
     background-color: #e65401;
     margin: 50px;
     padding: 20px;
-    color: #0c1f38;
-    
+    color: #0c1f38;  
+}
+
+.jumbotron p {
+    font-size: 30px;
+}
+
+p {
+    padding: 15px 0px;
+}
+
+.head-img {
+    box-shadow: 5px 5px 5px #fef200;
+}
+
+.eda img {
+    max-width: 100%;
+    box-shadow: 5px 5px 5px #fef200;
+}
+
+input, select {
+    color: #e65401;
+    font-weight: bolder;
 }
 
 .nav-item pre {
@@ -33,6 +54,11 @@ body {
     background-color: #0c1f38;
     color: #a7e0d7;
     padding: 15px;
+    font-size: 30px;
+}
+
+.below i {
+    font-size: 50px;
 }
 
 /* HIDE RADIO */
@@ -54,4 +80,10 @@ body {
 [type=radio]:checked + i {
     border: 5px solid #e65401;
     border-radius: 10px;
+}
+
+.click {
+    background-color: #e65401;
+    font-size: 50px;
+    color: #0c1f38;
 }
