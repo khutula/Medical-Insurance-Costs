@@ -8,7 +8,7 @@ d3.selectAll("button").on("click", function () {
     var smoke = d3.select('input[name="smoke"]:checked').node().value
 
     var height = (parseFloat(feet * 12) + parseFloat(inch));
-    var bmi = (weight / (height * height)) * 70300
+    var bmi = (weight / (height * height)) * 703
     console.log(age, weight, feet, inch, height, smoke, bmi);
     if (!weight) {
         return alert('Weight can not be empty')
