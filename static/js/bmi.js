@@ -9,7 +9,7 @@ d3.selectAll("button").on("click", function () {
 
     var height = ((feet * 12) + inch);
     var bmi = (weight / (height * height)) * 70300
-    console.log(age, weight, feet, inch, smoke, bmi);
+    console.log(age, weight, feet, inch, height, smoke, bmi);
     if (!weight) {
         return alert('Weight can not be empty')
 
