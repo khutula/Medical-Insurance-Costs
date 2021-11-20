@@ -19,7 +19,7 @@ d3.selectAll("button").on("click", function () {
     }
     var data = {
         age: age,
-        bmi,
+        bmi: bmi,
         smoke_yes: smoke
     }
     console.log(data)
