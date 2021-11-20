@@ -7,7 +7,7 @@ d3.selectAll("button").on("click", function () {
     var inch = d3.select("#inch").property("value");
     var smoke = d3.select('input[name="smoke"]:checked').node().value
 
-    var height = (feet * 12 + inch);
+    var height = ((feet * 12) + inch);
     var bmi = (weight / (height * height)) * 70300
     console.log(age, weight, feet, inch, smoke, bmi);
     if (!weight) {
