@@ -1,4 +1,4 @@
-const url = "../Resources/insurance.csv";
+const url = "static/Resources/insurance.csv";
 
 // Fetch the JSON data and console log it
 d3.csv(url).then(function(data) {
