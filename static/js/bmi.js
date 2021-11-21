@@ -7,9 +7,9 @@ d3.selectAll("button").on("click", function () {
     var inch = d3.select("#inch").property("value");
     var smoke = d3.select('input[name="smoke"]:checked').node().value
 
-    var height = (feet * 12 + inch);
-    var bmi = (weight / (height * height)) * 70300
-    console.log(age, weight, feet, inch, smoke, bmi);
+    var height = (parseFloat(feet * 12) + parseFloat(inch));
+    var bmi = (weight / (height * height)) * 703
+    console.log(age, weight, feet, inch, height, smoke, bmi);
     if (!weight) {
         return alert('Weight can not be empty')
 
@@ -19,7 +19,7 @@ d3.selectAll("button").on("click", function () {
     }
     var data = {
         age: age,
-        bmi,
+        bmi: bmi,
         smoke_yes: smoke
     }
     console.log(data)
@@ -36,8 +36,7 @@ d3.selectAll("button").on("click", function () {
         console.log('response', d)
         var cost = d.cost
         // d3.select("#output").property("value", cost);
-        document.getElementById("output").innerHTML = "Cost: " + cost.toFixed(0)
+        document.getElementById("output").innerHTML = "Cost: $" + cost.toFixed(0)
 
     })
 });
-
