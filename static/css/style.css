@@ -87,3 +87,9 @@ input, select {
     font-size: 50px;
     color: #0c1f38;
 }
+
+.output {
+    font-size: 100px;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px #e65401;
+}
