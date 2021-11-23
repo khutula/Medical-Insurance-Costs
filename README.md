@@ -102,24 +102,26 @@ After deciding to remove these variable from the model, we also performed hyperp
 
 Now that we have our machine learning model selected, we need to deploy the model for use on our website. Within our [notebook](static/Resources/Medical_Insurance.ipynb), we used pickle and joblib to save our model in a usable and callable file. 
 
-![model](static/images/model_deploy.PNG)
+![model](static/images/model_deploy.jpeg)
 
 <a name="site"></a>
 ## [The Website](https://medical-insurance-costs.herokuapp.com)
+
+![image](https://user-images.githubusercontent.com/82410966/143099814-0efdd6c4-4518-457d-abca-dfd9cb38d1ad.png)
 
 <a name="home"></a>
 ### [Estimator Landing Page](https://medical-insurance-costs.herokuapp.com)
 
 Our landing page is the main attraction. This is where a user will go to input their variables for Age, Height, Weight, and Smoker. It is important to note that BMI is the input to our model, but in order to make the site more user friendly, we opted to allow the user to input Weight and Height instead. Once the calculate button is pressed, the BMI is automatically calculated and inputted into the model. Once calculations are complete, a cost value displays as well as a plotly chart that shows where the user falls on the density chart from our dataset.
 
-
+![image](https://user-images.githubusercontent.com/82410966/143099508-0d64a832-aee8-432a-9ba7-c1c6b1d66076.png)
 
 <a name="eda-page"></a>
 ### [EDA Page](https://medical-insurance-costs.herokuapp.com/eda)
 
 This page was added as a fun extra for those who are data-curious to see some behind the scenes information on our data. We provided some of our EDA charts and images and explanations.
 
-
+![image](https://user-images.githubusercontent.com/82410966/143099915-fd955bfc-7357-4b6e-926a-39ac830270ed.png)
 
 <a name="future"></a>
 ### Next Steps
