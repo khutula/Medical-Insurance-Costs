@@ -46,7 +46,7 @@ d3.selectAll("button").on("click", function () {
         console.log('response', d)
         var cost = d.cost
         // d3.select("#output").property("value", cost);
-        document.getElementById("output").innerHTML = "Cost: $" + cost.toFixed(0);
+        document.getElementById("output").innerHTML = "Annual Cost: $" + cost.toFixed(0);
         CreateChart(list, cost);
         });
     });
