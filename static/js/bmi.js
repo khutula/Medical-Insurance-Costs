@@ -36,8 +36,9 @@ d3.selectAll("button").on("click", function () {
     .then(d => {
         console.log('response', d)
         var cost = d.cost
-        // d3.select("#output").property("value", cost);
-        document.getElementById("output").innerHTML = "Cost: $" + cost.toFixed(0) + "/ year"
+
+        document.getElementById("output").innerHTML = "Annual Cost: $" + cost.toFixed(0);
 
     });
 });
+
